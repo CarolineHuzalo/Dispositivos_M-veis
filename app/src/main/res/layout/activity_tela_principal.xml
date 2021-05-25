@@ -8,14 +8,26 @@
     tools:context=".TelaPrincipal">
 
     <Button
-        android:id="@+id/voltar_home"
+        android:id="@+id/manicure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home"
+        android:text="Serviços Manicure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <Button
+        android:id="@+id/loja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loja"
         app:backgroundTint="#E4E91E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.713" />
@@ -35,10 +47,10 @@
         app:layout_constraintVertical_bias="0.513" />
 
     <Button
-        android:id="@+id/voltar_login"
+        android:id="@+id/promocoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="Promoções"
         app:backgroundTint="#E4E91E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,5 +58,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.793" />
+
+    <Button
+        android:id="@+id/cabelos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serviços Cabelereiro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

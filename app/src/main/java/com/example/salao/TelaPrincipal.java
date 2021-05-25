@@ -8,27 +8,45 @@ import android.view.View;
 import android.widget.Button;
 
 public class TelaPrincipal extends AppCompatActivity {
-    Button voltarLogin;
-    Button voltarHome;
+    Button cabelereiro;
+    Button manicure;
+    Button promocao;
+    Button loja;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_principal);
-        voltarLogin = findViewById(R.id.voltar_login);
-        voltarHome = findViewById(R.id.voltar_home);
+        cabelereiro = findViewById(R.id.cabelos);
+        manicure = findViewById(R.id.manicure);
+        promocao = findViewById(R.id.promocoes);
+        loja = findViewById(R.id.loja);
 
-        voltarLogin.setOnClickListener(new View.OnClickListener() {
+        cabelereiro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(TelaPrincipal.this, Home.class);
+                Intent i = new Intent(TelaPrincipal.this, ServicosCabelereiro.class);
                 startActivity(i);
             }
         });
-        voltarHome.setOnClickListener(new View.OnClickListener() {
+        manicure.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(TelaPrincipal.this, MainActivity.class);
+                Intent i = new Intent(TelaPrincipal.this, ServicosManicure.class);
+                startActivity(i);
+            }
+        });
+        promocao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(TelaPrincipal.this, TipoPromocoes.class);
+                startActivity(i);
+            }
+        });
+        loja.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(TelaPrincipal.this, TipoLoja.class);
                 startActivity(i);
             }
         });

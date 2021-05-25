@@ -6,4 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".ServicosCabelereiro">
 
+    <TextView
+        android:id="@+id/textCabelereiro"
+        android:layout_width="260dp"
+        android:layout_height="208dp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="105dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

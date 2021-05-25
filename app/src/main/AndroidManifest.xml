@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.salao">
-
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,9 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Salao">
-
-        <activity android:name=".TelaPrincipal"></activity>
-        <activity android:name=".Home"/>
+        <activity android:name=".TipoLoja"
+            android:parentActivityName=".TelaPrincipal"></activity>
+        <activity android:name=".TipoPromocoes"
+            android:parentActivityName=".TelaPrincipal"></activity>
+        <activity android:name=".ServicosManicure"
+            android:parentActivityName=".TelaPrincipal"></activity>
+        <activity android:name=".ServicosCabelereiro"
+            android:parentActivityName=".TelaPrincipal"></activity>
+        <activity android:name=".TelaPrincipal" />
+        <activity android:name=".Home" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
